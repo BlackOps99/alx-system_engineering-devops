@@ -1,4 +1,4 @@
-# Install a package Flask
+# Install Flask
 
 package { 'Flask':
   ensure   => '2.1.0',
