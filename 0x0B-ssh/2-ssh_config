@@ -1,0 +1,7 @@
+# Ssh File
+
+Host 496909-web-01
+	Hostname 54.90.59.134
+	User ubuntu
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
