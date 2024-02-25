@@ -1,3 +1,5 @@
+# Set the config of a ssh_file
+
 file_line { 'Turn off passwd auth':
   path   => '/etc/ssh/sshd_config',
   line   => 'PasswordAuthentication no',
