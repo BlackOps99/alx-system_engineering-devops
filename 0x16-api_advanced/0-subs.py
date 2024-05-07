@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import requests
-
 """API Request for get total subscribers"""
+
+import requests
 
 
 def number_of_subscribers(subreddit):
@@ -9,10 +9,10 @@ def number_of_subscribers(subreddit):
 
     res = requests.get("https://www.reddit.com/r/{}/about.json"
                        .format(subreddit),
-                       headers={"User-Agent": "My-User-Agent"},
+                       headers={"User-Agent": "My-Agent"},
                        allow_redirects=False)
 
-    if res.status_code >= 300:
+    if res.status_code != 200:
         return 0
 
     return res.json().get("data").get("subscribers")
